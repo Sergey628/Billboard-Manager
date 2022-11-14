@@ -8,7 +8,6 @@ public class FilmsManager {
 
     public FilmsManager(int limit) {
         this.limit = limit;
-
     }
 
     public void addFilm(String film) {
@@ -28,7 +27,7 @@ public class FilmsManager {
         return tmp;
     }
 
-    public String[] findLast(int limit) {
+    public String[] findLast() {
         int resultLength;
         if (limit <= films.length) {
             resultLength = limit;
